@@ -3,7 +3,7 @@ define([
 	'hbs!templates/home/contact'
 	], function(Backbone, template){
 		
-		var HomeView = Backbone.View.extend({
+		var ContactView = Backbone.View.extend({
 
 			el: '#container',
 			template: template,
@@ -23,5 +23,5 @@ define([
 			}
 		});
 
-		return HomeView;
+		return ContactView;
 });
