@@ -6,6 +6,7 @@ require.config({
       'underscore': '/scripts/vendors/underscore',
       'handlebars': '/scripts/vendors/handlebars',
       'backbone'  : '/scripts/vendors/backbone',
+      'marionette'  : '/scripts/vendors/marionette',
       'hbs'       : '/scripts/vendors/hbs',
       'text'      : '/scripts/vendors/text'
   },
@@ -18,6 +19,10 @@ require.config({
       'backbone': {
           exports: 'Backbone',
           deps: ['jquery', 'underscore']
+      },
+      'marionette' : {
+          deps : ['jquery', 'underscore', 'backbone'],
+          exports : 'Marionette'
       },
       'underscore': {
           exports: '_'

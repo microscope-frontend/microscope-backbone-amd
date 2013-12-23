@@ -1,21 +1,13 @@
 define([
 	'jquery',
 	'backbone',
-	'routes/router',
-	'bootstrap'
-	], function($, Backbone, Router, bootstrap){
+	'marionette',
+	'bootstrap',
+	'application'
+	], function($, Backbone, Marionette, bootstrap, App, Router, Controller){
 
 		$(function() {
-
-			Backbone.history.start({
-		      pushState: false,
-		      root: '/',
-		      silent: true
-		    });
-
-			var router = new Router();
-
-			Backbone.history.loadUrl();
+			App.start();
 		});
 		
 });

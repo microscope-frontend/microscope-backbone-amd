@@ -1,26 +1,18 @@
 define([
 	'backbone',
+	'marionette',
 	'hbs!templates/home/contact'
-	], function(Backbone, template){
+	], function(Backbone, Marionette, template){
 		
-		var ContactView = Backbone.View.extend({
+		var ContactView = Backbone.Marionette.ItemView.extend({
 
-			el: '#container',
-			template: template,
-
-			/**
-			 * initialize view
-			 */
-			initialize: function() {
-				this.render();
+			initialize:function () {
+			
 			},
 
-			/**
-			 * render view
-			 */
-			render: function() {
-				this.$el.html(this.template);
-			}
+			template: template,
+			ui:{},
+			events: {}
 		});
 
 		return ContactView;

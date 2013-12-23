@@ -6,6 +6,7 @@ module.exports = {
 	    {src: '<%= configs.bower %>/jquery/jquery.js', dest: '<%= configs.vendors %>/jquery.js'},
 	    {src: '<%= configs.bower %>/requirejs/require.js', dest: '<%= configs.vendors %>/require.js'},
 	    {src: '<%= configs.bower %>/backbone/backbone.js', dest: '<%= configs.vendors %>/backbone.js'},
+	    {src: '<%= configs.bower %>/marionette/lib/backbone.marionette.js', dest: '<%= configs.vendors %>/marionette.js'},
 	    {src: '<%= configs.bower %>/underscore/underscore.js', dest: '<%= configs.vendors %>/underscore.js'},
 	    {src: '<%= configs.bower %>/handlebars/handlebars.js', dest: '<%= configs.vendors %>/handlebars.js'},
 	    {src: '<%= configs.bower %>/requirejs-hbs/hbs.js', dest: '<%= configs.vendors %>/hbs.js'},

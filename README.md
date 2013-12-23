@@ -1,7 +1,7 @@
 README
 ======
 
-BackboneJS project template for microscopejs rest API
+BackboneJS marionette project template for microscopejs rest API
 
 Requirements
 ------------

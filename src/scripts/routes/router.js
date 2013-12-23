@@ -1,25 +1,16 @@
 define([
 	'backbone',
-	'views/home/home',
-    'views/home/contact'
-	], function(Backbone, HomeView, ContactView){
+    'marionette'
+	], function(Backbone, Marionette, Controller){
 	
-	var Router = Backbone.Router.extend({
+	var Router = Backbone.Marionette.AppRouter.extend({
 
         /**
          * routes handler
          */
-        routes: {
+        appRoutes: {
             ""       : "home",
             "contact": "contact"
-        },
-
-        home: function(){
-        	var homeView = new HomeView();
-        },
-
-        contact: function(){
-            var contactView = new ContactView();
         }
     });
 
