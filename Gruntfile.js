@@ -10,6 +10,7 @@ module.exports = function(grunt) {
 	var connect = require('./grunt_tasks/connect');
 	var concat = require('./grunt_tasks/concat');
 	var watch = require('./grunt_tasks/watch');
+	var requirejs = require('./grunt_tasks/requirejs');
 
 	/**
 	 * initialize configuration
@@ -23,7 +24,8 @@ module.exports = function(grunt) {
 		stylus: stylus,
 		connect: connect,
 		concat: concat,
-		watch: watch
+		watch: watch,
+		requirejs: requirejs
 	});
 
 	/**
@@ -35,6 +37,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 	/**
 	 * register tasks.
@@ -43,4 +46,12 @@ module.exports = function(grunt) {
 	grunt.registerTask('move', ['copy:assets', 'copy:src', 'copy:vendors']);
 	grunt.registerTask('build', ['clean', 'move', 'stylus:dev', 'concat']);
 	grunt.registerTask('run', ['build', 'connect', 'watch']);
+		grunt.registerTask('production', [
+		'clean',
+		'build',
+		'concat:production',
+		'copy:production',
+		'stylus:production',
+		'requirejs'
+	]);
 };

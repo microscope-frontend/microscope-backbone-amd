@@ -28,5 +28,14 @@ module.exports = {
 			// application assets
 	    	{expand: true, cwd: '<%= configs.assetsFolder %>/', src: ['**'], dest: '<%= configs.wwwFolder %>/'}
 		]
+	},
+	production:{
+		files:[
+			// application assets
+			{expand: true, cwd: '<%= configs.bower %>/bootstrap/dist/fonts/', src: ['**'], dest: 'build/fonts/'},
+			{src: '<%= configs.bower %>/bootstrap/dist/css/bootstrap.min.css', dest: 'build/styles/bootstrap.css'},
+	    	{expand: true, cwd: '<%= configs.assetsFolder %>/', src: ['**'], dest: 'build/'},
+	    	{src: '<%= configs.bower %>/animate.css/animate.css', dest: '<%= configs.wwwFolder %>/styles/animate.css'}
+		]
 	}
 };

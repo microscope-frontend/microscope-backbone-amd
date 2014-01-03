@@ -1,4 +1,4 @@
-define([
+require([
 	'jquery',
 	'backbone',
 	'marionette',
@@ -9,5 +9,4 @@ define([
 		$(function() {
 			App.start();
 		});
-		
 });
