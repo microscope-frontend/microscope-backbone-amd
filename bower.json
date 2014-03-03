@@ -1,26 +1,26 @@
 {
-  "name": "backbone_movies",
-  "version": "0.0.0",
-  "authors": [
-    "bhtz <benjamin.heintz@almerys.com>"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "backbone": "~1.1.0",
-    "underscore": "1.4.4",
-    "handlebars": "~1.1.2",
-    "requirejs-hbs": "*",
-    "requirejs": "~2.1",
-    "text": "requirejs/text#~2.0.10",
-    "jquery": "1.9.0",
-    "bootstrap": "3.x",
-    "marionette": "~1.4.1"
-  }
+    "name": "mcsp-backbone project template.",
+    "version": "0.0.0",
+    "authors": [
+        "bhtz <benjamin.heintz@almerys.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "backbone": "1.1.0",
+        "underscore": "1.4.4",
+        "handlebars": "~1.1.2",
+        "requirejs-hbs": "*",
+        "requirejs": "~2.1",
+        "text": "requirejs/text#~2.0.10",
+        "jquery": "1.9.0",
+        "bootstrap": "3.x",
+        "marionette": "~1.4.1"
+    }
 }
