@@ -17,7 +17,7 @@ Installation
 
 	bower install
 	npm install
-	grunt run
+	grunt debug
 
 Grunt commands
 --------------

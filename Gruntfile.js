@@ -45,11 +45,11 @@ module.exports = function(grunt) {
     /**
      * register tasks.
      */
-    grunt.registerTask('default', ['run']);
+    grunt.registerTask('default', ['debug']);
     grunt.registerTask('docs', ['docco', 'connect:docs']);
     grunt.registerTask('move', ['copy:assets', 'copy:src', 'copy:vendors']);
     grunt.registerTask('build', ['clean', 'move', 'stylus:dev', 'concat']);
-    grunt.registerTask('debug', ['build', 'connect', 'watch']);
+    grunt.registerTask('debug', ['build', 'connect:server', 'watch']);
     grunt.registerTask('production', [
         'clean',
         'build',
